@@ -1,0 +1,18 @@
+﻿restaurant,location,address,zip,lat,lon,,,,,
+1500 Ocean,Coronado,1500 Orange Ave,92118,32.681261,-117.17992,,,,,
+608 Restaurant,Oceanside,608 Ocean Ave,92054,33.2,-117.38,,,,,
+Pokewan,Del Mar,12925 El Camino Real,92130,32.952013,-117.23253,,,,,
+Havana 1920,Gaslamp Quarter,548 Fifth Ave,92101,32.71111,-117.16041,,,,,
+Lionfish Modern Coastal Cuisine,Gaslamp Quarter,435 Fifth Ave,92101,32.71154,-117.16014,,,,,
+Born & Raised,Little Italy,1909 India St,92101,32.724682,-117.168381,,,,,
+Hundred Proof,Normal Heights,4130 Park Blvd,92103,32.75308,-117.14669,,,,,
+Antique Row Café,North Park,3002 Adams Ave,92116,32.76307,-117.12998,,,,,
+Bobboi Natural Gelato,La Jolla,8008 Girard Ave,92037,32.84812,-117.27449,,,,,
+Juniper & Ivy,Little Italy,2228 Kettner Blvd,92101,32.72749,-117.1713,,,,,
+,,,,,,,,,,
+name:,"""1500 Ocean,""","""608 Restaurant,""","""Pokewan,""","""Havana 1920,""","""Lionfish Modern Coastal Cuisine,""","""Born & Raised,""","""Hundred Proof,""","""Antique Row Café,""","""Bobboi Natural Gelato,""","""Juniper & Ivy,"""
+location:,"""Coronado,""","""Oceanside,""","""Del Mar,""","""Gaslamp Quarter,""","""Gaslamp Quarter,""","""Little Italy,""","""Normal Heights,""","""North Park,""","""La Jolla,""","""Little Italy,"""
+address:,"""1500 Orange Ave,""","""608 Ocean Ave,""","""12925 El Camino Real,""","""548 Fifth Ave,""","""435 Fifth Ave,""","""1909 India St,""","""4130 Park Blvd,""","""3002 Adams Ave,""","""8008 Girard Ave,""","""2228 Kettner Blvd,"""
+zip:,"""92118,""","""92054,""","""92130,""","""92101,""","""92101,""","""92101,""","""92103,""","""92116,""","""92037,""","""92101,"""
+lat:,"""32.681261,""","""33.2,""","""32.952013,""","""32.71111,""","""32.71154,""","""32.724682,""","""32.75308,""","""32.76307,""","""32.84812,""","""32.72749,"""
+lon:,"""-117.17992,""","""-117.38,""","""-117.23253,""","""-117.16041,""","""-117.16014,""","""-117.168381,""","""-117.14669,""","""-117.12998,""","""-117.27449,""","""-117.1713,"""
