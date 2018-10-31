@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Slick Nick and K_Bizzle</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slick Nick and K_Bizzle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
   <body>
-		<div class="container">
-			<nav class="navbar">
-				<ul>
-					<li>
-						<a href="../Project2.html">Home</a>
-					</li>
-					<li>
-            <a href="../Yelp/yelp.html">Yelp</a>
-					</li>
-					<li>
-						<a href="../Twitter/twitter.html">Twitter</a>
-					</li>
-					<li>
-						<a href="../Nyse/NYSE.html">NYSE</a>
-          </li>	
-          <li>
-						<a href="../Google/google.html">Google</a>
-          </li>	
-          <li>
-						<a href="../Zagat/Zagat.html">Zagat</a>
-          </li>	
-          <li>
-						<a href="../Results/results.html">Results</a>
-          </li>	
-				</ul>
-			</nav>
-		</div>
-  </body>
-  
-  <nav>
-    <h1><strong>NYSE</strong></h1>
-      <p class="sansserif">
-        Welcome to our #food page!
-        <br>
-        <br>
-        The purpose of this project was to ....
-        <br>
-        <br>
-        After compiling the dataset, we ...
-      </p>
-    </nav>
-    
+      <div class="container">
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a href="../Project2.html">Home</a>
+              </li>
+              <li>
+                <a href="../Yelp/yelp.html">Yelp</a>
+              </li>
+              <li>
+                <a href="../Twitter/twitter.html">Twitter</a>
+              </li>
+              <li>
+                <a href="../Nyse/NYSE.html">NYSE</a>
+              </li>	
+              <li>
+                <a href="../Google/google.html">Google</a>
+              </li>	
+              <li>
+                <a href="../Zagat/Zagat.html">Zagat</a>
+              </li>	
+              <li>
+                <a href="../Results/results.html">Results</a>
+              </li>	
+            </ul>
+          </nav>
+        </div>
+        <h1><strong>NYSE</strong></h1>
+        <p class="sansserif">
+          Welcome to our #food page!
+          <br>
+          Here at the NYSE page, we looked at the trend of the restaurant itself or the company that owned the restaurant...
+          <br>
+          If it trends up then is good if it trends down its bad
+          <br>  
+        </p>
+          <h2><strong>Ticker List:</strong></h2>
+          <ol>
+              <li>1500 Ocean - HLT</li>
+              <li>608 Restaurant - Permanently Closed</li>
+              <li>Pokewan - No Ticker</li>
+              <li>Havana 1920 - No Ticker</li>
+              <li>Lionfish Modern Coastal Cuisine - MGM</li>
+              <li>Born & Raised - No Ticker</li>
+              <li>Hundred Proof - No Ticker</li>
+              <li>Antique Row Café - No Ticker</li>
+              <li>Bobboi Natural Gelato - No Ticker</li>
+              <li>Juniper & Ivy - No Ticker</li>
+              
+          </ol>
+      
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
-  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
-  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
-  crossorigin=""></script>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="stockInput">Stock</label>
+        <input type="text" class="form-control" id="stockInput" placeholder="Enter a stock">
+      </div>
+      <button id="submit" type="submit" class="btn btn-default">Plot Stock</button>
+    </form>
+    <div id="plot"></div>
 
-  <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-  <!-- The div that holds our map -->
-  <div id="map"></div>
-
-  <nav>
     <h3><strong>Proposal</strong></h3>
       <p class="sansserif">
         Our project is to determine if professional food critic reviews accurately reflect the food enjoyment for the average person. 
@@ -72,9 +79,6 @@
         of the project, we will determine if the “top 10 picks of San Diego from 2017” chosen by the professional food critics at the 
         San Diego Union Tribune have positive results based on our metrics.
       </p>
-    </nav>
-
-    <nav>
       <h3><strong>Links</strong></h3>
         <p class="sansserif">
            <ul>
@@ -110,19 +114,7 @@
         
         
         </p>
-      </nav>
+    <script src="plots.js"></script>
 
-  <!-- D3 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
-
-  <!-- Leaflet JavaScript
-  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script> -->
-
-  <script type="text/javascript" src="restaurantdata.js"></script>
-  <!-- API Key -->
-  <script type="text/javascript" src="config.js"></script>
-  <!-- Our JavaScript -->
-  <script type="text/javascript" src="logic.js"></script>
-</body>
-
+  </body>
 </html>
