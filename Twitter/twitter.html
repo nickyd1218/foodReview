@@ -36,9 +36,17 @@
   <nav>
     <h1><strong>Twitter</strong></h1>
       <p class="sansserif">
-        Welcome to our Twitter Vader Anslysis Review page!
+        Welcome to our #Twitter Vader Anslysis Review page!
         <br>
         <br>
+        We utilized Twitter API and the Vader Sentiment Analysis to see just how people felt about 
+        each of the top 10 restaurants. We quickly found a limitation to this by discovering that 
+        tweets older than 1 week from the time of searching are not included in the results.
+        <br>
+        <br>
+        To account for this, we decided that restaurants that received ANY tweets about it in a week span, 
+        and therefore contributed to a vader analysis received 0.5 points on the NicKris scale while restaurants 
+        that received ANY tweets about it in a week span AND had a higher sentiment score than negative score received a full point.
       </p>
     </nav>
 
@@ -60,5 +68,16 @@
       <p class="sansserif">
         The charts above show the Vader Sentiment Analysis for five of the ten restaurants
         in our "Top Ten" list. 
+        <br>
+        <br>
+        Hundred Proof SD, Juniper and Ivy, and LionFish received a full point each.
+        <br>
+        <br>
+        Bobboi Gelato and Pokewan SD received 0.5 points each.
+        <br>
+        <br>
+        1500 Ocean, 608 Oceanside, Havana 1920, Born and Raised, and Antique Row Café received no points.
+        <br>
+        <br>
       </p>
     </nav>
