@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Slick Nick and K_Bizzle</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slick Nick and K_Bizzle</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
   <body>
-		<div class="container">
-			<nav class="navbar">
-				<ul>
-					<li>
-						<a href="../Project2.html">Home</a>
-					</li>
-					<li>
-            <a href="yelp.html">Yelp</a>
-					</li>
-					<li>
-						<a href="../Twitter/twitter.html">Twitter</a>
-					</li>
-					<li>
-						<a href="../Nyse/NYSE.html">NYSE</a>
-          </li>	
-          <li>
-						<a href="../Google/google.html">Google</a>
-          </li>	
-          <li>
-						<a href="../Zagat/Zagat.html">Zagat</a>
-          </li>	
-          <li>
-						<a href="../Results/results.html">Results</a>
-          </li>	
-				</ul>
-			</nav>
-		</div>
-  </body>
   
-  <nav>
-    <h1><strong>Yelp</strong></h1>
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a href="../Project2.html">Home</a>
+              </li>
+              <li>
+                <a href="yelp.html">Yelp</a>
+              </li>
+              <li>
+                <a href="../Twitter/twitter.html">Twitter</a>
+              </li>
+              <li>
+                <a href="../Nyse/NYSE.html">NYSE</a>
+              </li>	
+              <li>
+                <a href="../Google/google.html">Google</a>
+              </li>	
+              <li>
+                <a href="../Zagat/Zagat.html">Zagat</a>
+              </li>	
+              <li>
+                <a href="../Results/results.html">Results</a>
+              </li>	
+            </ul>
+          </nav>
+        </div>
+        <h1><strong>Yelp</strong></h1>
+        <p class="sansserif">
+          Welcome to our Yelp page!
+          <br>
+          <br>
+          In this section, we looked looked at the average rating of each restaurant on Yelp.
+          <br>
+          <br>
+          If the resaturant has a score of 4 or higher, they are awarded a full point
+          <br>
+        </p>
+         
+      
+
+
+    <div id="plot"></div>
+
+    <h3><strong>Proposal</strong></h3>
       <p class="sansserif">
-        Welcome to our Yelp Review page!
-        <br>
-        <br>
+        Our project is to determine if professional food critic reviews accurately reflect the food enjoyment for the average person. 
+        We will be examining data from public food review websites including Zagat, Yelp, and Google Reviews. We will also be looking 
+        at the relationship of each restaurant and their stock ticker as well as the sentiment analysis for each on twitter. By the end 
+        of the project, we will determine if the “top 10 picks of San Diego from 2017” chosen by the professional food critics at the 
+        San Diego Union Tribune have positive results based on our metrics.
       </p>
-    </nav>
+      <h3><strong>Links</strong></h3>
+        <p class="sansserif">
+           <ul>
+						<a href="https://hoteldel.com/restaurant-coronado/1500-ocean/" target="_blank">1500 Ocean</a>
+          </ul>	
+          <ul>
+						<a href="" target="_blank">608 Oceanside</a>
+          </ul>	
+          <ul>
+						<a href="http://www.pokewan.com/" target="_blank">Pokewan</a>
+          </ul>	
+          <ul>
+						<a href="http://havana1920.com/" target="_blank">Havana 1920</a>
+          </ul>	
+          <ul>
+						<a href="https://lionfishsd.com/" target="_blank">Lionfish Modern Coastal Cuisine</a>
+          </ul>	
+          <ul>
+						<a href="http://bornandraisedsteak.com/" target="_blank">Born & Raised</a>
+          </ul>	
+          <ul>
+						<a href="https://www.hundredproofsd.com/" target="_blank">Hundred Proof</a>
+          </ul>	
+          <ul>
+						<a href="http://antiquerowcafe.menutoeat.com/" target="_blank">Antique Row Cafe</a>
+          </ul>	
+          <ul>
+						<a href="http://bobboi.com/" target="_blank">Bobboi Natural Gelato</a>
+          </ul>	
+          <ul>
+						<a href="http://www.juniperandivy.com/" target="_blank">Juniper & Ivy</a>
+          </ul>	
+        
+        
+        </p>
+    <script src="plot.js"></script>
 
-     <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-  <nav>
-    <h3><strong>Results</strong></h3>
-      <p class="sansserif">
-        Insert Text Here
-      </p>
-    </nav>
-
-
-
+  </body>
 </html>
